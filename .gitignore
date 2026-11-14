@@ -5,14 +5,14 @@
 # Build products
 
 stage/
-src/bgc.html
-src/bgc.epub
-src/bgc-wide.html
-src/bg-css*.html
-src/bgc_*.pdf
-src/split
-src/split-wide
-src/bgc_temp*
+**/src/bgc.html
+**/src/bgc.epub
+**/src/bgc-wide.html
+**/src/bg-css*.html
+**/src/bgc_*.pdf
+**/src/split
+**/src/split-wide
+**/src/bgc_temp*
 
 __pycache__
 
@@ -25,3 +25,7 @@ bar.[ch]
 baz
 baz.[ch]
 .vscode/*
+.DS_Store
+
+# AI
+AGENTS.md
