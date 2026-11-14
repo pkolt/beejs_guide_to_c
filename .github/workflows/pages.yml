@@ -47,11 +47,12 @@ jobs:
             zip
 
       - name: Build guide
+        env:
+          BGBSPD_BUILD_DIR: ${{ github.workspace }}/bgbspd
         run: >-
           make -C ru/src all
-          BGBSPD_BUILD_DIR="$GITHUB_WORKSPACE/bgbspd"
-          PDF_MAINFONT="Liberation Serif"
-          PDF_SANSFONT="Liberation Sans"
+          'PDF_MAINFONT="Liberation Serif"'
+          'PDF_SANSFONT="Liberation Sans"'
 
       - name: Assemble Pages site
         run: |
